@@ -13,7 +13,7 @@ export default function Pagination({
   itemCount: number;
   pageSize: number;
   currentPage: number;
-  onPageChange: Function;
+  onPageChange: (page: number) => void;
 }) {
   const pageCount = Math.ceil(itemCount / pageSize);
 
